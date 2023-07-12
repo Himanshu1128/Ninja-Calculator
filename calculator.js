@@ -6,7 +6,7 @@ let output = "";
 const calculate = (btnValue) => {
   display.focus();
   if (btnValue === "=" && output !== "") {
-    output = eval(output.replace("%", "/100"));
+    output = eval(inputE.value);
   } else if (btnValue === "AC") {
     output = "";
   } else if (btnValue === "DEL") {
