@@ -20,3 +20,11 @@ const calculate = (btnValue) => {
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 });
+
+display.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    // document.getElementById("myBtn").click();
+    display.value = output;
+  }
+});
